@@ -1,75 +1,146 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  position: absolute;
-  width: 1440px;
-  height: 194px;
-  left: 0px;
-  top: 0px;
-  background: #990000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 10px;
-  color: #F7F7CF;
-  font-family: 'Beale';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 33px;
-  text-decoration: none;
-}
-
-.top-dog {
-  position: absolute;
-  width: 323px;
-  height: 99px;
-  left: 506px;
-  top: 47px;
-}
-
-.top-dog h1 {
-  font-family: 'Beale';
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 99px;
-  color: #F7F7CF;
-  margin: 0;
-}
-
-.top-dog p {
-  font-family: 'Beale';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 33px;
-  color: #C1D343;
-  margin: 0;
-}
-
-.main-image {
-  position: absolute;
-  width: 822px;
-  height: 573px;
-  left: 310px;
-  top: 224px;
-  background: #FF6600;
-  overflow: hidden;
-}
-
-.main-image img {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7F7CF;
+  }
+  
+  header {
+    position: absolute;
+    width: 1440px;
+    height: 194px;
+    left: 0px;
+    top: 0px;
+    background: #990000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #F7F7CF;
+    font-family: 'Beale';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    text-decoration: none;
+  }
+  
+  .top-dog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 323px;
+    height: 99px;
+    left: calc(50% - (323px / 2));
+    top: 47px;
+  }
+  
+  .top-dog h1 {
+    font-family: 'Beale';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 99px;
+    color: #F7F7CF;
+    margin: 0;
+  }
+  
+  .top-dog p {
+    font-family: 'Beale';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    color: #C1D343;
+    margin: 0;
+  }
+  
+  .main-image {
+    position: absolute;
+    width: 822px;
+    height: 573px;
+    left: 310px;
+    top: 224px;
+    background: #FF6600;
+    overflow: hidden;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .rectangle-10 {
+    position: absolute;
+    width: 822px;
+    height: 573px;
+    left: 0;
+    top: 0;
+    background: #FF6600;
+  }
+  
+  .rectangle-9 {
+    position: absolute;
+    width: 778px;
+    height: 534px;
+    left: 22px;
+    top: 20px;
+    background: #990000;
+  }
+  
+  .rectangle-8 {
+    position: absolute;
+    width: 731px;
+    height: 491px;
+    left: 24px;
+    top: 22px;
+    background: #C1D343;
+  }
+  
+  .information {
+    position: absolute;
+    width: 1375px;
+    height: 454px;
+    left: 33px;
+    top: 820px;
+  }
+  
+  .rectangle-12 {
+    position: absolute;
+    width: 1375px;
+    height: 454px;
+    left: 0;
+    top: 0;
+    background: #FF6600;
+  }
+  
+  .rectangle-11 {
+    position: absolute;
+    width: 1332px;
+    height: 438px;
+    left: 22px;
+    top: 20px;
+    background: #C1D343;
+  }
+  
+  .story-title {
+    position: absolute;
+    width: 301px;
+    height: 33px;
+    left: 35px;
+    top: 22px;
+    font-family: 'Beale';
+    font-weight: 700;
+    font
+  }  
