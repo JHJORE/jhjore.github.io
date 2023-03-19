@@ -142,5 +142,20 @@ body {
     top: 22px;
     font-family: 'Beale';
     font-weight: 700;
-    font
-  }  
+    font-size: 20px;
+    line-height: 33px;
+    color: #990000;
+  }
+  
+  .story-text {
+    position: absolute;
+    width: 1281px;
+    height: 350px;
+    left: 35px;
+    top: 75px;
+    font-family: 'Helvetica';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #990000;
+  }
