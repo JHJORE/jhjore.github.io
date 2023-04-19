@@ -1,6 +1,6 @@
-function toggleSongs(){
-    const songsSecondHalf = document.getElementById("songs-second-half")
-    songsSecondHalf.classList.toggle("hidden")
-}
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+  
 
-document.getElementById("toggle-button").onclick = toggleSongs;
+document.getElementById("toggleButton").addEventListener("click", toggleTheme);
