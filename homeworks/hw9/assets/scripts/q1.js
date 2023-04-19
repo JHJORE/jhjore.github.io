@@ -10,10 +10,8 @@
  */
 function setBackgroundColor(color) {
     // TODO: Get the element with the id "q1-container" and set its background color to the input color
-
-
-
-
+    const container = document.getElementById("q1-container");
+    container.style.backgroundColor = color
 
 }
 
@@ -31,11 +29,9 @@ function setBackgroundColor(color) {
 function redButtonClicked() {
     // TODO: Use the setBackgroundColor() to set the background color to #EF476F (or another color of your choice)
 
-
-
-
-
+    setBackgroundColor("#EF476F");
 }
+
 
 // This gets the element with id "q1-btn-red" and sets the browser to run the function redButtonClicked() when someone clicks the element
 document.getElementById("q1-btn-red").onclick = redButtonClicked;
@@ -51,7 +47,10 @@ document.getElementById("q1-btn-red").onclick = redButtonClicked;
 
 // TODO: Define a function like yellowButtonClicked() that sets the background color
 
-
+function yellowButtonClicked() {
+    setBackgroundColor("#FFD166");
+}
+document.getElementById("q1-btn-yellow").onclick = yellowButtonClicked;
 
 
 
@@ -69,6 +68,10 @@ document.getElementById("q1-btn-red").onclick = redButtonClicked;
 // Use the color #06D6A0, or change it up to your liking
 
 // TODO: Make the green button work similarly
+function greenButtonClicked() {
+    setBackgroundColor("#06D6A0");
+}
+document.getElementById("q1-btn-green").onclick = greenButtonClicked;
 
 
 
@@ -79,6 +82,10 @@ document.getElementById("q1-btn-red").onclick = redButtonClicked;
 
 // TODO: Make the light blue button work similarly
 
+function lightBlueButtonClicked() {
+    setBackgroundColor("#118AB2");
+}
+document.getElementById("q1-btn-lightblue").onclick = lightBlueButtonClicked;
 
 
 
@@ -87,3 +94,7 @@ document.getElementById("q1-btn-red").onclick = redButtonClicked;
 // Use the color #073B4C, or change it up to your liking
 
 // TODO: Make the blue button work similarly
+function blueButtonClicked() {
+    setBackgroundColor("#073B4C");
+}
+document.getElementById("q1-btn-blue").onclick = blueButtonClicked;
