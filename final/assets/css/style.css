@@ -42,49 +42,52 @@ body {
 .nav-bar-items {
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
-    font-weight: 300; /* Correct font-weight value */
+    font-weight: 300; 
     font-size: 30px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #F2F2F2;
     margin-left: 20px;
     text-decoration: none;
 }
 
 .nav-bar-items:hover {
-    text-decoration: none; /* Remove underline on hover */
+    color: #fff;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .button {
     padding: 12px 24px;
     border-radius: 40px;
-    color: #ffffff;
+    color: #F2F2F2;
     text-decoration: none;
     margin-left: 20px;
     font-size: 24px;
-    font-weight: 300; /* Decreased font-weight */
-    border: 2px solid #FFFFFF; /* Match sign-up button border */
+    font-weight: 300; 
+    border: 2px solid #F2F2F2; 
 }
 
-.button:hover {
-    text-decoration: none; /* Remove underline on hover */
-}
 
 #sign-up {
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
-    font-weight: 300; /* Correct font-weight value */
+    font-weight: 300; 
     font-size: 23px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #F2F2F2;;
     box-sizing: border-box;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #F2F2F2;;
     border-radius: 40px;
     margin-left: auto;
     padding: 12px 24px;
 }
 
+#sign-up:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: color 0.2s ease-in
+}
 #home-wrapper {
     display: flex;
     justify-content: center;
@@ -100,7 +103,7 @@ body {
     align-items: center;
 }
 
-.home-header {
+.home-header, .home-header-sub {
     font-family: 'Recoleta', serif;
     font-style: normal;
     font-weight: 400;
@@ -109,25 +112,39 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 10px;
+    position: relative;
+    animation: shine 2s infinite;
 }
 
-.home-header-sub {
-    font-family: 'Recoleta', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 54px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 50px;
-}
 
 #info {
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
-    font-weight: 20; /* Correct font-weight value */
+    font-weight: 20;
     font-size: 35px;
     line-height: 42px;
     color: #FFFFFF;
     margin-bottom: 50px;
 }
+
+#getstarted-main {
+    padding: 12px 24px;
+    border-radius: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 300; 
+    border: 2px solid #FFFFFF;
+    transition: all 0.3s ease-in-out; 
+}
+
+#getstarted-main:hover {
+    transform: scale(1.1); 
+    border-color: #fff; 
+    color: #fff; 
+}
+
+a {
+    text-decoration: none;
+  }
