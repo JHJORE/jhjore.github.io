@@ -149,14 +149,15 @@ body {
     height: auto;
     background: rgba(255, 255, 255, 0.58);
     border: 1px solid rgba(147, 147, 147, 0.24);
-    box-shadow: 5px 4px 100px 10px #939393;
     border-radius: 15px;
     padding: 10px;
     position: relative;
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
+    align-items: stretch;
   }
+
   #courses-container {
     display: flex;
     flex-wrap: nowrap; 
@@ -165,7 +166,9 @@ body {
     gap: 30px;
     align-items: flex-start;
     margin: 0 auto; 
+    margin-left: 200px;
     overflow-x: auto; 
+    height: auto;
 }
 
 .course:last-child {
@@ -176,6 +179,7 @@ body {
 .course-images {
     position: relative;
     height: 0;
+    width: 100%;
     padding-bottom: 56.25%;
     overflow: hidden;
 }
@@ -258,77 +262,29 @@ body {
     color: #000000;
   }
 
-  #blog-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 1440px;
-    margin: 50px auto;
-    padding: 30px;
-    background: rgba(243, 243, 243, 0.15);
-    box-shadow: 0px 4px 4px rgba(243, 243, 243, 0.15);
-    border-radius: 15px;
-}
-
-#blog-text {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 50%;
-}
-
-#blog-text div {
-    font-family: 'Recoleta', serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 54px;
-    color: #FFFFFF;
-}
-
-#blog-about {
-    font-family: 'SF UI Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-#blog-img {
-    max-width: 50%;
-}
-
-#blog-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-.explore-course {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-explore {
-    width: 260px;
-    height: 54px;
+  #about-explore {
+    margin-top: 10px;
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.explore-category {
-    font-family: 'SF UI Display', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    margin-top: 10px;
+#explore-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
 }
+  
+  #explore-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
