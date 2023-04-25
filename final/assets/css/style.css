@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    text-decoration: none;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+#logo a {
+    font-family: 'Recoleta', serif;
+    font-style: normal;
+    font-weight: 6font 00;
+    font-size: 50px;
+    line-height: 68px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#nav-bar-items {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+
+.nav-bar-items {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 10;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav-bar-items:hover {
+    text-decoration: underline; /* added to show underline on hover */
+  }
+
+.button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 300; /* Decreased font-weight */
+    border: 2px solid #FFFFFF; /* Match sign-up button border */
+}
+
+.button:hover {
+    text-decoration: underline; /* added to make sign-up button underlined on hover */
+    border-bottom-color: #ffffff; /* added to make sign-up button underlined on hover */
+  }
+
+#sign-up{
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 10;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    margin-left: auto;
+}
+
+#home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.home-header {
+    font-family: 'Recoleta', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 109px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+  
+  .home-header-sub {
+    font-family: 'Recoleta', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+#info {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 420;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
