@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <html>
-        <head>
-               <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-               <link href="https://fonts.googleapis.com/css?family=Recoleta&display=swap" rel="stylesheet"> 
-               <link rel="stylesheet" href="assets/css/stylecourses.css">
-               <title>Final Frida</title>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Recoleta&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/css/stylecourses.css">
+        <title>Final Frida</title>
        </head>
        <body>
            <div id="nav">
@@ -33,91 +32,111 @@
                </a>
            </div>
            <div class="rectangle">
-                <div class="rectangle-content">
-                    <div id = "filter-container">
-                        <div id = "browse-classes"> 
-                            Browse Classes
+            <div class="rectangle-content">
+                <div id="browse-classes">
+                    Browse Classes
+                </div>
+                <div id="filter-container">
+                    <div class="filter" id="budgeting">
+                        <span class="filter-icon"><img src="assets/img/money_bag.png" alt="moneybag"></span>
+                        Budgeting
+                    </div>
+                    <div class="filter" id="retirement">
+                        <span class="filter-icon"><img src="assets/img/money.png" alt="moneybag"></span>
+                        Retirement
+                    </div>
+                    <div class="filter" id="debt-planing">
+                        <span class="filter-icon"><img src="assets/img/debt.png" alt="moneybag"></span>
+                        Debt Planning
+                    </div>
+                    <div class="filter" id="investing">
+                        <span class="filter-icon"><img src="assets/img/investing.png" alt="moneybag"></span>
+                        Investing
+                    </div>
+                    <div class="filter" id="credit">
+                        <span class="filter-icon"><img src="assets/img/credit.png" alt="moneybag"></span>
+                        Credit
+                    </div>
+                </div>
+                <div id = "courses-container">
+                    <div class="course">
+                        <div class="profile">
+                            <img src="assets/img/dow.png" alt="Mrs. Dow Jones" class="profile-img">
+                            <div class="profile-name">Mrs. Dow Jones</div>
                         </div>
-                        <div class="filter" id = "budgeting">
-                             Budgeting
+                        <div class="course-images">
+                            <img src="assets/img/starthere.png" alt="First Image" class="course-img">
                         </div>
-                        <div class="filter" id = "retirment">
-                            Retirment
+                        <div class="about" id = about-start-here>
+                            Learn how to create a monthly budget with Mrs Dow Jones in 2 weeks 
                         </div>
-                        <div class="filter" id = "investing">
-                            Investing
+                        <div class="categories"> <!-- Add a new div for categories -->
+                            <span class="category">Budgeting</span>
+                            <span class="category">Investing</span>
                         </div>
-                        <div class="filter" id = "credit">
-                             Credit
+                    </div>  
+                    <div class="course">
+                        <div class="profile">
+                            <img src="assets/img/dunlap.png" alt="Tori Dunlap" class="profile-img">
+                            <div class="profile-name">Tori Dunlap</div>
                         </div>
-        <   /div>
-        <div id = "courses-container">
-            <div class="course" id="start-here">
-                <div class = "profile" id = "mrs-dow-jones">
-                    <div class="profile-img" id="dow-img"></div>
-                    <div class = "profile-name" id="name-jones">Mrs Dow Jones</div>
-                </div>
-                <div class="content" id = "img-start-here"></div>
-                <div class="about" id = about-start-here>
-                    Learn how to create a monthly budget with Mrs Dow Jones in 2 weeks 
-                </div>
-                <div class="catagory-container">
-                    <div class="catagory" id = "budgeting-jones">Budgeting</div>
-                    <div class="catagory" id = "spending-jones">Investing</div>
-                </div>
-            </div>  
-            <div class="course" id="financial-feminist">
-                <div class = "profile" id = "tori-dunlap">
-                    <div class="profile-img" id="dunlap-img"></div>
-                    <div class = "profile-name" id="name-dunlap">Tori Dunlap</div>
-                </div>
-                <div class="content" id = "img-finacial-feminist"></div>
-                <div class="about" id = about-finacial-feminist>
-                    Learn about Investing 101 with Tori Dunlap in 60 minutes 
-                </div>
-                <div class="catagory-container">
-                    <div class="catagory" id = "investing-dunlap">Investing</div>
-                    <div class="catagory" id = "budgeting-dunlap">Budgeting</div>
-                </div>
-            </div>  
-            <div class="course" id="broke-millenial">
-                <div class = "profile" id = "broke-jones">
-                    <div class="profile-img" id="jones-img-broke"></div>
-                    <div class = "profile-name" id="name-jones-broke">Mrs Dow Jones</div>
-                </div>
-                <div class="content" id = "img-broke-mellenial"></div>
-                <div class="about" id = about-broke-millenial>
-                    Learn how to pay off debt effectively with Erin Lowry in 30 days 
-                </div>
-                <div class="catagory-container">
-                    <div class="catagory" id = "debthplanning-jones-broke">Debt Planning</div>
-                    <div class="catagory" id = "budgeting-jones-broke">Budgeting</div>
-                </div>
-            </div> 
-            <div class="course" id="explore">
-                <div id = "explore-profile">
-                    <div class="profile-img" id="explore-img"></div>
-                    <div class = "profile-name" id="name-jones-broke"><strong>Explore all classes in Personal Finance</strong></div>
-                </div>
-                <div id = "about-explore">
-                    100+ hours of exclusive lessons and expert-guided classes, supported by an engaged community.
-                </div>
-                <div class="catagory-container">
-                    <div id = "explore-catagory">Explore Personal Finance</div>
-                </div>
-            </div> 
-        </div>
-        <div id="blog-container">
-            <div id = blog-text>
-                <div id="header-top">Follow Proven, Step-</div>
-                <div id="header-middle">By-Step Processes of</div>
-                <div id="header-bottom">the worlds best</div>
-                <div id="blog-about"> Accelerate your progress with exclusive lessons and hands-on exercises from trusted experts, structured
-                    into effective, easy-to-follow paths.
+                        <div class="course-images">
+                            <img src="assets/img/fin-fem.png" alt="Third Image" class="course-img">
+                        </div>
+                        <div class="about" id = about-finacial-feminist>
+                            Learn about Investing 101 <br> with 
+                            Tori Dunlap<br> in 60 minutes 
+                        </div>
+                        <div class="categories"> <!-- Add a new div for categories -->
+                            <span class="category">Investing</span>
+                            <span class="category">Budgeting</span>
+                        </div>
+                    </div>  
+                    <div class="course">
+                        <div class="profile">
+                            <img src="assets/img/dow.png" alt="Mrs. Dow Jones Broke" class="profile-img">
+                            <div class="profile-name">Mrs. Dow Jones</div>
+                        </div>
+                        <div class="course-images">
+                            <img src="assets/img/brokemil.png" alt="Third Image" class="course-img">
+                        </div>
+                        <div class="about" id = about-broke-millenial>
+                            Learn how to pay off debt effectively with Erin Lowry in 30 days 
+                        </div>
+                        <div class="catagory-container">
+                                <span class="category">Debt Planing</span>
+                                <span class="category">Investing</span>
+                        </div>
+                    </div> 
+                    <div class="course">
+                        <div id = "explore-profile">
+                            <img src="assets/img/bank.png" alt="Mrs. Dow Jones Broke" class="profile-img">
+                            <div class = "profile-name" ><strong>Explore all classes in Personal Finance</strong></div>
+                        </div>
+                        <div id = "about-explore">
+                            100+ hours of exclusive lessons and expert-guided classes, supported by an engaged community.
+                        </div>
+                        <div class="explore-category">
+                            Explore Category
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <div id="blog-img">
-</div>
+        </div>
+        <div class="scrollable-content">
+            <div id="blog-container">
+                <div id = blog-text>
+                    <div id="header-top">Follow Proven, Step-</div>
+                    <div id="header-middle">By-Step Processes of</div>
+                    <div id="header-bottom">the worlds best</div>
+                    <div id="blog-about"> Accelerate your progress with exclusive lessons and hands-on exercises from trusted experts, structured
+                        into effective, easy-to-follow paths.
+                    </div>
+                </div>
+                <div id="blog-img">
+                    <img src="" alt=""smiling woman>
+                </div>
+            </div>
         </div>
     </body>
 </html>

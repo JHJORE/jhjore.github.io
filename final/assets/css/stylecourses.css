@@ -42,7 +42,7 @@ body {
 .nav-bar-items {
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
-    font-weight: 300; /* Correct font-weight value */
+    font-weight: 300; 
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-bar-items:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none; 
 }
 
 .button {
@@ -62,18 +62,18 @@ body {
     text-decoration: none;
     margin-left: 20px;
     font-size: 24px;
-    font-weight: 300; /* Decreased font-weight */
-    border: 2px solid #FFFFFF; /* Match sign-up button border */
+    font-weight: 300; 
+    border: 2px solid #FFFFFF;
 }
 
 .button:hover {
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none; 
 }
 
 #sign-up {
     font-family: 'SF UI Display', sans-serif;
     font-style: normal;
-    font-weight: 300; /* Correct font-weight value */
+    font-weight: 300; 
     font-size: 23px;
     line-height: 36px;
     text-align: center;
@@ -87,25 +87,25 @@ body {
 
 .rectangle {
     position: absolute;
-    width: 100%; /* Changed to 100% to make the rectangle responsive */
+    width: 100%; 
     min-height: 584px;
     left: 0;
     top: 120px;
     background: rgba(243, 243, 243, 0.15);
     box-shadow: 0px 4px 4px rgba(243, 243, 243, 0.15);
     z-index: 0;
-    display: flex; /* Added display flex */
-     /* Added to center the content horizontally */
+    display: flex; 
+   
   }
   
   .rectangle-content {
-    width: 80%; /* Set a width for the content */
-    max-width: 1440px; /* Limit the maximum width */
+    width: 80%; 
+    max-width: 1440px; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Change to flex-start to align content to the left */
-    gap: 30px; /* Add a gap between the elements */
-    padding-top: 30px; /* Add padding to move the content down */
+    align-items: flex-start; 
+    gap: 30px; 
+    padding-top: 30px; 
     padding-left: 30px;
   }
 
@@ -118,4 +118,217 @@ body {
     color: #FFFFFF;
   }
 
-  
+  #filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.filter {
+    font-family:  'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    padding: 6px 16px;
+    border-radius: 40px;
+    
+    border: 2px solid #FFFFFF;
+}
+
+.course {
+    box-sizing: border-box;
+    width: calc((100% - 120px) / 4);
+    height: auto;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid rgba(147, 147, 147, 0.24);
+    box-shadow: 5px 4px 100px 10px #939393;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+  #courses-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    max-width: 1300px;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 0 auto; 
+    overflow-x: auto; 
+}
+
+.course:last-child {
+    margin-right: 0; 
+}
+
+
+.course-images {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.course-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0; 
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-family: 'Recoleta', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+    margin-left: 20px; 
+}
+
+.about {
+    margin-top: 10px; 
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+.categories {
+    display: flex; 
+    justify-content: flex-start; 
+    margin-top: 10px; 
+}
+
+.category {
+    position: relative;
+    height: 14px;
+    margin-right: 10px;
+
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 5px 8px; 
+    border-radius: 10px;
+}
+
+#explore-profile img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 6px solid #ddd;
+  }
+
+  #explore-profile .profile-name {
+    text-align: center;
+    font-family: 'Recoleta', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+  }
+
+  #blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(243, 243, 243, 0.15);
+    box-shadow: 0px 4px 4px rgba(243, 243, 243, 0.15);
+    border-radius: 15px;
+}
+
+#blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 50%;
+}
+
+#blog-text div {
+    font-family: 'Recoleta', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+#blog-about {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+#blog-img {
+    max-width: 50%;
+}
+
+#blog-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.explore-course {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-explore {
+    width: 260px;
+    height: 54px;
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.explore-category {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
