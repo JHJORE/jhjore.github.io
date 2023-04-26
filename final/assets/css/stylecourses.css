@@ -10,6 +10,17 @@ body {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+  }
+
+  #product, #about-us {
+    margin-top: 10px;
+      }
+
+    .filter-icon img {
+        padding-top: 2px;
+    }
 #nav {
     display: flex;
     justify-content: space-between;
@@ -46,29 +57,29 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #F2F2F2;
     margin-left: 20px;
     text-decoration: none;
 }
 
 .nav-bar-items:hover {
-    text-decoration: none; 
+    color: #fff;
+    border-color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .button {
     padding: 12px 24px;
     border-radius: 40px;
-    color: #ffffff;
+    color: #F2F2F2;
     text-decoration: none;
     margin-left: 20px;
     font-size: 24px;
     font-weight: 300; 
-    border: 2px solid #FFFFFF;
+    border: 2px solid #F2F2F2; 
 }
 
-.button:hover {
-    text-decoration: none; 
-}
 
 #sign-up {
     font-family: 'SF UI Display', sans-serif;
@@ -77,12 +88,18 @@ body {
     font-size: 23px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #F2F2F2;;
     box-sizing: border-box;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #F2F2F2;;
     border-radius: 40px;
     margin-left: auto;
     padding: 12px 24px;
+}
+
+#sign-up:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: color 0.2s ease-in
 }
 
 .rectangle {
@@ -128,7 +145,11 @@ body {
 }
 
 .filter {
-    font-family:  'SF UI Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'SF UI Display', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -139,14 +160,25 @@ body {
     text-align: center;
     padding: 6px 16px;
     border-radius: 40px;
-    
     border: 2px solid #FFFFFF;
+}
+
+.filter-content {
+    position: relative;
+    z-index: 1;
+}
+
+.filter-icon {
+    margin-top: 8px;
 }
 
 .course {
     box-sizing: border-box;
     width: calc((100% - 120px) / 4);
     height: auto;
+    min-width: 300px;
+    min-height: 350px;
+    flex: 1;
     background: rgba(255, 255, 255, 0.58);
     border: 1px solid rgba(147, 147, 147, 0.24);
     border-radius: 15px;
@@ -166,15 +198,16 @@ body {
     gap: 30px;
     align-items: flex-start;
     margin: 0 auto; 
-    margin-left: 200px;
+    margin-left: 50px;
     overflow-x: auto; 
     height: auto;
 }
 
-.course:last-child {
-    margin-right: 0; 
+#about-explore {
+    margin-top: 50px; 
+    margin-left: 50px; 
+    
 }
-
 
 .course-images {
     position: relative;
@@ -287,4 +320,80 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .scrollable-content {
+    position: relative;
+    top: 704px;
+}
+#browse-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.scrollable-content #blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF
+  }
+
+  #about-explore {
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 50px
+    ;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .filter.selected {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000;
+  }
+
+  .explore-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .explore-button {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .explore-button:hover {
+    background-color: #555;
+    color: white;
   }

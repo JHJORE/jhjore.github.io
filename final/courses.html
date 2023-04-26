@@ -39,23 +39,33 @@
                 <div id="filter-container">
                     <div class="filter" id="budgeting">
                         <span class="filter-icon"><img src="assets/img/money_bag.png" alt="moneybag"></span>
-                        Budgeting
+                        <div class="filter-content">
+                            Budgeting
+                        </div>
                     </div>
-                    <div class="filter" id="retirement">
-                        <span class="filter-icon"><img src="assets/img/money.png" alt="moneybag"></span>
-                        Retirement
+                    <div class="filter" id="retirment">
+                        <span class="filter-icon"><img src="assets/img/money.png" alt="money"></span>
+                        <div class="filter-content">
+                            Retirment
+                        </div>
                     </div>
-                    <div class="filter" id="debt-planing">
-                        <span class="filter-icon"><img src="assets/img/debt.png" alt="moneybag"></span>
-                        Debt Planning
+                    <div class="filter" id="debt-planning">
+                        <span class="filter-icon"><img src="assets/img/debt.png" alt="debt"></span>
+                        <div class="filter-content">
+                            Debt Planning
+                        </div>
                     </div>
                     <div class="filter" id="investing">
                         <span class="filter-icon"><img src="assets/img/investing.png" alt="moneybag"></span>
-                        Investing
+                        <div class="filter-content">
+                            Investing
+                        </div>
                     </div>
                     <div class="filter" id="credit">
-                        <span class="filter-icon"><img src="assets/img/credit.png" alt="moneybag"></span>
-                        Credit
+                        <span class="filter-icon"><img src="assets/img/credit.png" alt="cred\"></span>
+                        <div class="filter-content">
+                            Credit
+                        </div>
                     </div>
                 </div>
                 <div id = "courses-container">
@@ -113,12 +123,12 @@
                             <img src="assets/img/bank.png" alt="Mrs. Dow Jones Broke" class="profile-img">
                             <div class = "profile-name" ><strong>Explore all classes in Personal Finance</strong></div>
                         </div>
-                        <div class="about">
+                        <div class="about" id="about-explore">
                             100+ hours of exclusive lessons and expert-guided classes, supported by an engaged community.
                         </div>
-                        <div class="categories" id="explore-category"> 
-                            <span class="category">Explore Category</span>
-                        </div>
+                        <div class="section explore-section" id="explore">
+                            <button class="explore-button">Explore Courses</button>
+                          </div>
                     </div> 
                 </div>
             </div>
@@ -126,17 +136,24 @@
         <!-- <div class="scrollable-content">
             <div id="blog-container">
                 <div id = blog-text>
-                    <div id="header-top">Follow Proven, Step-</div>
-                    <div id="header-middle">By-Step Processes of</div>
-                    <div id="header-bottom">the worlds best</div>
+                    <div class="header">Follow Proven, Step-</div>
+                    <div class="header">By-Step Processes of</div>
+                    <div class="header">the worlds best</div>
                     <div id="blog-about"> Accelerate your progress with exclusive lessons and hands-on exercises from trusted experts, structured
                         into effective, easy-to-follow paths.
                     </div>
                 </div>
                 <div id="blog-img">
-                    <img src="" alt=""smiling woman>
+                    <img src="assets/img/womensaving.png" alt=""smiling woman>
                 </div>
             </div>
-        </div> -->
+        </div>  -->
+        <script>
+            document.querySelectorAll('.filter').forEach(filter => {
+              filter.addEventListener('click', () => {
+                filter.classList.toggle('selected');
+              });
+            });
+          </script>
     </body>
 </html>

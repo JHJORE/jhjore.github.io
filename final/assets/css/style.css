@@ -53,6 +53,8 @@ body {
 
 .nav-bar-items:hover {
     color: #fff;
+    border-color: #fff;
+    border-bottom: 2px solid #fff;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
@@ -147,4 +149,8 @@ body {
 
 a {
     text-decoration: none;
+  }
+
+  #product, #about-us {
+margin-top: 10px;
   }
